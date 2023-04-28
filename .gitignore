@@ -4,4 +4,5 @@
 # VSCode Settings
 .vscode
 
-# 
+# To ignore large files (larger than 100M)
+# find . -size +100M | cat >> .gitignore
