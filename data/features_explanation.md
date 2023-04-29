@@ -88,9 +88,7 @@
 
 - 2P% -- 2-Point Field Goal Percentage
 
-- eFG% -- Effective Field Goal Percentage
-
-- This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
+- eFG% -- Effective Field Goal Percentage. This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
 
 - FT -- Free Throws Per Game
 
