@@ -115,4 +115,20 @@
 - PTS -- Points Per Game
 
 
+------
+
+Positions:
+
+### Guards
+- SG: Shooting Guard (armador - 1)
+- PG: Point Guard (ala-armador - 2) 
+
+### Forwards
+- SF: Small Forward (ala - 3)
+- PF: Power Forward (ala-pivô - 4)
+- C: Center (pivô - 5)
+
+
+
+
 > FONTE: 
