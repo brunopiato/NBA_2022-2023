@@ -8,7 +8,7 @@ st.set_page_config(
 st.sidebar.markdown('# NBA PlayersDex v.0.1')
 st.sidebar.markdown('## Season 22/23')
 st.sidebar.markdown('## Visualizing your favorite players')
-st.sidebar.image('/home/bruno/repos/NBA_2022-2023/streamlit/pages/NBA_logo.png', use_column_width=True)
+st.sidebar.image('./pages/NBA_logo.png', use_column_width=True)
 st.sidebar.markdown("""---""")
 
 st.write('# NBA PlayersDex v.0.1')
