@@ -34,8 +34,9 @@ data = pd.read_csv('df_selected.csv', low_memory=False)
 ########################################################
 #              Layout da barra lateral
 ########################################################
-st.sidebar.image('./pages/NBA_logo_small.png', width=120)
-st.sidebar.markdown('# NBA PlayersDex - Season 22/23')
+st.sidebar.image('./pages/NBA_logo_small.png', use_column_width=True)
+st.sidebar.markdown('# NBA PlayersDex v.0.1')
+st.sidebar.markdown('## Season 22/23')
 st.sidebar.markdown("""---""")
 
 
@@ -48,8 +49,7 @@ st.sidebar.markdown("""---""")
 # selected_positions = st.sidebar.multiselect(label='Select the position(s)', 
 #                        options=data['Pos'].unique(),
 #                        default = [])
-# selected_player = st.sidebar.selectbox(label='Select the player', 
-#                        options=data['Player'].unique())
+
 #Vinculando os widgets aos dados
 # selected_rows = data['Tm'].isin(selected_teams)
 # data = data.loc[selected_rows, :]
@@ -62,7 +62,11 @@ st.sidebar.markdown("""---""")
 
 
 #---------------------- Player selection ------------------- #
-selected_player = st.sidebar.text_input(label="Player's name", value='Joel Embiid')
+
+selected_player = st.sidebar.selectbox(label='Select the player', 
+                       options=data['Player'].unique())
+
+# selected_player = st.sidebar.text_input(label="Player's name", value='Joel Embiid')
 
 
 selected_data = data[data['Player'] == selected_player]
@@ -78,10 +82,6 @@ vorp = selected_data['VORP'].iloc[0]
 obpm = selected_data['OBPM'].iloc[0]
 dbpm = selected_data['DBPM'].iloc[0]
 bpm = selected_data['BPM'].iloc[0]
-
-
-
-#-------------------------- METRICS ------------------------ #
 
 
 
@@ -117,7 +117,7 @@ with st.container():
         st.text(f'OBPM: {round(obpm, 3)}')
         st.text(f'DBPM: {round(dbpm, 3)}')
         
-
+st.markdown("---")
 
 # ----------------------------------------------------------------    
 with st.container():
