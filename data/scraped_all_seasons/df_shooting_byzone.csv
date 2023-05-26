@@ -1,0 +1,1 @@
+PLAYER_ID,PLAYER_NAME,TEAM_ID,TEAM_ABBREVIATION,AGE,NICKNAME,FGM_ra,FGA_ra,FG_PCT_ra,FGM_paint,FGA_paint,FG_PCT_paint,FGM_midrange,FGA_midrange,FG_PCT_midrange,FGM_lc3,FGA_lc3,FG_PCT_lc3,FGM_rc3,FGA_rc3,FG_PCT_rc3,FGM_break,FGA_break,FG_PCT_break,FGM_backcourt,FGA_backcourt,FG_PCT_backcourt,FGM_corner3,FGA_corner3,FG_PCT_corner3,season_id,season_type
